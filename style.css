@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --couleur-principale: #1c7864;
+    --couleur-principale-hover: #145a49; 
+    --couleur-fond-clair: #d7f7ee;
+    --couleur-sombre: #1c1c1c;
+    --couleur-claire: #ffffff;
+    --police-titres: 'Space Grotesk', sans-serif;
+    --police-corps: 'Inter', sans-serif;
+    --couleur-bordure:#b9d6cd;
+}
+
+body {
+    font-family: var(--police-corps);
+    line-height: 1.6;
+    color: var(--couleur-sombre);
+}
+
+.hero {
+    background-color: var(--couleur-principale);
+    color: var(--couleur-claire);
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero p {
+    margin: 10px;
+}
+
+.apropos, .competences, .projets, .contact, .galerie {
+    padding: 60px 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.apropos, .contact {
+    background-color: var(--couleur-fond-clair);
+}
+
+h1 {
+    font-family: var(--police-titres);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: var(--police-titres);
+    color: var(--couleur-principale);
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: var(--couleur-principale);
+    margin-top: 8px;
+}
+
+footer {
+    background-color: var(--couleur-sombre);
+    color: var(--couleur-claire);
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.contact button {
+    display: inline-block;
+    background-color: var(--couleur-principale);
+    color: var(--couleur-claire);
+    padding: 14px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: var(--couleur-principale-hover);
+}
+
+.nav-principale {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.nav-principale a {
+    color: var(--couleur-claire);
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+}
+
+.nav-principale a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background-color: var(--couleur-claire);
+    transition: width 0.4s;
+}
+
+.nav-principale a:hover::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-principale {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+}
+
+.grille-galerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.grille-galerie img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .grille-galerie {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1 {
+    animation: apparition 0.8s ease-out both;
+}
+
+.hero p {
+    animation: apparition 0.8s ease-out 0.2s both;
+}
+
+.nav-principale {
+    animation: apparition 0.8s ease-out 0.4s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero h1,
+    .hero p,
+    .nav-principale {
+        animation: none;
+    }
+}
+
+.formulaire-contact label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.formulaire-contact input,
+.formulaire-contact textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid var(--couleur-bordure);
+    border-radius: 6px;
+    background-color: var(--couleur-claire);
+    font-family: inherit;
+    font-size: inherit;
+    transition: border-color 0.3;
+}
+
+.formulaire-contact textarea {
+    resize: vertical;
+}
+
+.formulaire-contact input:focus,
+.formulaire-contact textarea:focus {
+    border-color: var(--couleur-principale);
+    outline: 2px solid var(--couleur-principale);
+    outline-offset: 2px;
+}

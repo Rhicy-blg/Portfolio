@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Rhicy BALOGOUN</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+        <h1>Rhicy BALOGOUN</h1>
+        <p>Développeur web en formation</p>
+        <nav class="nav-principale">
+            <a href="#apropos">À propos</a>
+            <a href="#competences">Compétences</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+    <section class="apropos" id="apropos">
+        <h2>À propos</h2>
+        <p>Étudiant en pharmacie, développeur web en formation et autoentrepreneur, désireux d'élargir au maximum ses compétences.</p>
+    </section>
+    
+    <section class="competences" id="competences">
+        <h2>Compétences</h2>
+        <ul>
+            <li>E-commerçant de produits physiques et digitaux</li>
+            <li>CEO de Crypto Mastery</li>
+            <li>Investisseur crypto</li>
+        </ul>
+    </section>
+
+    <section class="galerie" id="galerie">
+        <h2>Galerie</h2>
+        <div class="grille-galerie">
+            <img src="moi.jpeg" alt="Mon profil">
+            <img src="plan-travail.jpeg" alt="Séance de travail">
+            <img src="projet-nova-soumission1.jpeg" alt="Première soumission du Projet NOVA, un projet d'exercice">
+            <img src="projet-nova-acheve.png" alt="Résultat final du Projet NOVA">
+            <img src="portfolio-debuts.jpeg" alt="Projet Portfolio, avant la mise en place du CSS">
+            <img src="projet-portfolio-en-cours.jpeg" alt="Etape actuelle du Projet Portfolio">
+        </div>
+    </section>
+
+    <section class="projets" id="projets">
+        <h2>Projets</h2>
+        <p>Ce portfolio est mon premier projet, actuellement en construction.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Me contacter</h2>
+        <form class="formulaire-contact" action="https://formspree.io/f/xdeabqgo" method="POST">
+            <label for="nom">Ton nom</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Ton adresse e-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Ton message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+ </main>
+
+    <footer>
+        <p>Rhicy BALOGOUN</p>
+    </footer>
+
+</body>
+
+</html>
