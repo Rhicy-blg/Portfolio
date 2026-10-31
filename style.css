@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --couleur-principale:#1c7864;
+    --couleur-fond-sombres:#0f3f34;
+    --couleur-fond-clairs:#e4f2ed;
+    --couleur-texte:#16231f;
+    --couleur-jaune:#f5b700;
+    --couleur-jaune-survol:#d99f00;
+    --couleur-blanche:#ffffff;
+    --couleur-ligne-fine:#c9d9d3;
+    --police-titres:'Archivo Black', sans-serif;
+    --police-corps:'Archivo', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    font-family: var(--police-corps);
+    color: var(--couleur-texte);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: var(--police-titres);
+    color: var(--couleur-blanche);
+}
+
+h2 {
+    font-family: var(--police-titres);
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.croix {
+    color: var(--couleur-principale);
+}
+
+.croix-jaune {
+    color: var(--couleur-jaune);
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.header {
+    background-color: var(--couleur-blanche);
+    border-bottom: 1px solid var(--couleur-ligne-fine);
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: var(--couleur-principale);
+}
