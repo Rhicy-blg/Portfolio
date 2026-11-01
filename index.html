@@ -7,8 +7,8 @@
     <title>Portfolio de Rhicy BALOGOUN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2? family=Archivo+Black&family=Archivo:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -27,15 +27,18 @@
 
     <main>
         <section class="hero">
-            <div class="container">
+            <div class="container hero-one">
                 <div class="hero-texte">
                     <span class="badge">Étudiant en pharmacie</span>
-                    <h1>Rhicy BALOGOUN</h1>
-                    <p>Développeur web en formation</p>
-                    <p>J'apprends à construire des sites web, en plus de mes études de pharmacie et de mes activités
+                    <h1>Rhicy<br>
+                         BALOGOUN</h1>
+                    <p class="hero-titre">Développeur web en formation</p>
+                    <p class="hero-description">J'apprends à construire des sites web, en plus de mes études de pharmacie et de mes activités
                         d'entrepreneur.</p>
-                    <a href="#projets" class="bouton jaune">Voir mes projets</a>
-                    <a href="#contact" class="bouton neutre">Me contacter</a>
+                    <div class="boutons">
+                    <a href="#projets" class="bouton-jaune">Voir mes projets</a>
+                    <a href="#contact" class="bouton-neutre">Me contacter</a>
+                    </div>
                 </div>
 
                 <div class="hero-photo">
@@ -47,7 +50,10 @@
         </section>
 
         <div class="bandeau">
-            <p>+ Pharmacie + Développement web + E-commerce + Crypto Mastery</p>
+            <div class="bandeau-defile">
+                <p>+ Pharmacie + Développement web + E-commerce + Crypto Mastery </p>
+                <p aria-hidden="true">+ Pharmacie + Développement web + E-commerce + Crypto Mastery</p>
+            </div>
         </div>
 
         <section class="apropos" id="apropos">
