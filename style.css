@@ -43,12 +43,12 @@ img {
 }
 
 h1 {
-    font-family: var(--police-corps);
+    font-family: var(--police-titres);
     color: var(--couleur-blanche);
 }
 
 h2 {
-    font-family: var(--police-corps);
+    font-family: var(--police-titres);
     font-size: 30px;
     font-weight: normal;
     margin-bottom: 25px;
@@ -71,7 +71,7 @@ h2 {
 .header {
     background-color: var(--couleur-blanche);
     border-bottom: 1px solid var(--couleur-ligne-fine);
-    padding: 15px 150px;
+    padding: 15px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -226,7 +226,7 @@ h2 {
 
 @keyframes defilement {
     from { transform: translateX(0);}
-    to {transform: translateX(-50);}
+    to {transform: translateX(-50%);}
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -234,7 +234,7 @@ h2 {
 }
 
 .apropos {
-    padding: 80px 0;
+    padding: 80px 200px ;
     display: flex;
     align-items: center;
     gap: 60px;
@@ -242,7 +242,7 @@ h2 {
 
 .apropos-image img {
     width: 340px;
-    height: 400px;
+    height: 380px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -253,13 +253,17 @@ h2 {
     margin-bottom: 15px;
     }
 
+.apropos-texte {
+    width: 550px;
+}
+
 .apropos-texte p{
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .services {
     background: var(--couleur-fond-clairs);
-    padding: 65px 0;
+    padding: 65px 100px;
 }
 
 .cartes {
@@ -283,5 +287,201 @@ h2 {
 
 .carte p {
     font-size: 17px;
+}
+
+.projets {
+    padding: 300px 100px;
+}
+
+.projets h2 {
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--couleur-ligne-fine);
+}
+
+.projets {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 0;
+    border-bottom: 1px solid var(--couleur-ligne-fine);
+}
+
+.projets:last-child {
+    border-bottom: none;
+}
+
+.projet-texte {
+    max-width: 380px;
+}
+
+.projet-type {
+    color: var(--couleur-principale);
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.projet h3 {
+    font-size: 28px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.projet-texte p:not(.projet-type) {
+    font-size: 12px;
+}
+
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.tags li {
+    border: 2px solid var(--couleur-texte);
+    border-radius: 20px;
+    padding: 2px 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.projet-images {
+    position: relative;
+    width: 520px;
+    height: 300px;
+}
+
+.projet-images figure {
+    position: absolute;
+}
+
+.projet-images .avant {
+    top: 0;
+    left: 0;
+    width: 60%;
+    transform: rotate(-3deg);
+}
+
+.projet-images .apres {
+    top: 30px;
+    right: 0;
+    width: 55%;
+    transform: rotate(2deg);
+    box-shadow: 0 5px 15px rgba(0,0,0,.25);
+}
+
+.projet-images figcaption {
+    position: absolute;
+    background: var(--couleur-texte);
+    color: var(--couleur-blanche);
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.avant figcaption {
+    top: -12px;
+    left: 15px;
+}
+
+.apres figcaption {
+    bottom: -10px;
+    right: 10px;
+    background: var(--couleur-principale);
+}
+
+.contact {
+    background: var(--couleur-fond-sombres);
+    color: var(--couleur-blanche);
+    padding: 65px 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.contact-texte {
+    max-width: 400px;
+}
+
+.contact-texte h2 {
+    font-size: 35px;
+}
+
+.contact-texte p {
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.reseaux {
+    display: flex;
+    gap: 10px;
+}
+
+.reseaux a {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--couleur-blanche);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.reseaux a:hover {
+    background: var(--couleur-jaune);
+    color: var(--couleur-texte);
+    border-color: var(--couleur-jaune);
+}
+
+.formulaire {
+    background: var(--couleur-blanche);
+    color: var(--couleur-texte);
+    padding: 30px;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.formulaire label {
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 8px
+}
+
+.formulaire input, .formulaire textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid var(--couleur-ligne-fine);
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 15px;
+}
+
+.formulaire button {
+    width: 100%;
+    padding: 12px;
+    background: var(--couleur-jaune);
+    color: var(--couleur-texte);
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.formulaire button:hover {
+    background: var(--couleur-jaune-survol);
+}
+
+.footer {
+    background-color: var(--couleur-texte);
+    color: var(--couleur-blanche);
+    padding: 15px 0;
+    font-size: 15px;
 }
 
