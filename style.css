@@ -560,6 +560,13 @@ h2 {
         width: 100%;
         height: 320px;
     }
+    .apropos-texte {
+        width: 100%;
+    }
+    .services {
+        padding: 50px 20px;
+        padding-bottom: 250px;
+    }
     .cartes {
         grid-template-columns: 1fr 1fr;
     }
@@ -593,6 +600,9 @@ h2 {
 }
 
 @media (max-width: 500px) {
+    .services {
+        padding-bottom: 500px;
+    }
     .cartes {
         grid-template-columns: 1fr;
     }
