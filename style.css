@@ -565,9 +565,9 @@ h2 {
     }
     .services {
         padding: 50px 20px;
-        padding-bottom: 250px;
     }
     .cartes {
+        height: auto;
         grid-template-columns: 1fr 1fr;
     }
     .projet-ligne {
@@ -600,9 +600,6 @@ h2 {
 }
 
 @media (max-width: 500px) {
-    .services {
-        padding-bottom: 500px;
-    }
     .cartes {
         grid-template-columns: 1fr;
     }
