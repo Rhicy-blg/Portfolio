@@ -17,6 +17,10 @@
     --police-corps:'Archivo', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     line-height: 1.6;
     font-family: var(--police-corps);
