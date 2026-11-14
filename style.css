@@ -601,6 +601,16 @@ h2 {
         padding: 25px;
         max-width: none;
     }
+    .menu-burger {
+        display: block; 
+    }
+    .nav-principale {
+        display: none;
+    }
+    .nav-principale.ouvert {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 500px) {
@@ -610,4 +620,8 @@ h2 {
     .hero h1 {
         font-size: 35px;
     }
+}
+
+.menu-burger {
+    display: none;
 }
