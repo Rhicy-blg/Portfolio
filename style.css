@@ -509,6 +509,10 @@ h2 {
     font-size: 20px;
 }
 
+.menu-burger {
+    display: none;
+}
+
 @media (max-width: 800px) {
     .header {
         flex-direction: column;
@@ -620,8 +624,4 @@ h2 {
     .hero h1 {
         font-size: 35px;
     }
-}
-
-.menu-burger {
-    display: none;
 }
