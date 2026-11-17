@@ -511,6 +511,12 @@ h2 {
 
 .menu-burger {
     display: none;
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 
 @media (max-width: 800px) {
